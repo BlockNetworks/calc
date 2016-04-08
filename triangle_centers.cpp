@@ -25,6 +25,7 @@ int main(){
 	query("d: ", &d);
 	query("x: ", &x);
 	query("y: ", &y);
+	cout << "\n";
 
 	if(a == x){
 		if(c == x){
@@ -73,7 +74,7 @@ int main(){
 	cout << "Circumcenter: (" << (**px + **qx + **rx - *undeobfuscated_x_0) / 2 << ", ";
 
 	// 116-126
-	cout << (**py + **qy + **ry - *undeobfuscated_y_0) / 2 << endl;
+	cout << (**py + **qy + **ry - *undeobfuscated_y_0) / 2 << ")" << endl;
 
 	// 131-139
 	pol(**rx - **qx, **ry - **qy, &x, &y);

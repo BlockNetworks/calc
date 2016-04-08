@@ -3,7 +3,7 @@
 function do_test {
 	ScriptName="$1"
 	Input="$2"
-	ExpectedOutput="$3"
+	ExpectedOutput=$(printf "$3")
 	TailLines="${4:-1}"
 	g++ -std=c++0x "$ScriptName".cpp -o "$ScriptName".o
 	GotOutput=$(printf "$Input" | ./"$ScriptName".o | tail -n "$TailLines")
@@ -15,4 +15,4 @@ function do_test {
 	echo Test "$ScriptName" passed
 }
 
-do_test triangle_centers "" "" # TODO
+do_test triangle_centers "0\n6\n3\n0\n0\n0\n" "Centroid: (1, 2)\nOrthocenter: (0, 0)\nCircumcenter: (3, 3)\nIncenter: (2, 2)" 4
