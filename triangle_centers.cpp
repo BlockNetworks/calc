@@ -26,6 +26,15 @@ int main(){
 	query("x: ", &x);
 	query("y: ", &y);
 
+	if(a == x){
+		if(c == x){
+			cerr << "Not a triangle - all angles with same X-coordinate!" << endl;
+			return 2;
+		}
+		swapVariables(&c, &x, &m);
+		swapVariables(&d, &y, &m);
+	}
+
 	// 27-44
 	cout << "Centroid: (" << (**px + **qx + **rx) / 3 << ", " << (**py + **qy + **ry) / 3 << ")" << endl;
 
