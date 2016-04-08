@@ -5,7 +5,7 @@ function do_test {
 	Input="$2"
 	ExpectedOutput=$(printf "$3")
 	TailLines="${4:-1}"
-	g++ -std=c++0x "$ScriptName".cpp -o "$ScriptName".o
+	g++ -std=c++0x "$ScriptName".cpp -o "$ScriptName".obj
 	GotOutput=$(printf "$Input" | ./"$ScriptName".o | tail -n "$TailLines")
 	if [ "$GotOutput" != "$ExpectedOutput" ]
 	then

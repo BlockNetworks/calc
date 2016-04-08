@@ -41,7 +41,6 @@ int main(){
 
 	// 47-60
 	stat.dt(x, y, pol(b - d, a - c, &x, &y));
-	delete rx;
 	rx = new StatAverageGettable<double>(true);
 	ry = new StatAverageGettable<double>(false);
 	// 61-65
