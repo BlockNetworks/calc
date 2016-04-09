@@ -6,7 +6,7 @@ function do_test {
 	ExpectedOutput=$(printf "$3")
 	TailLines="${4:-1}"
 	g++ -std=c++0x "$ScriptName".cpp -o "$ScriptName".obj
-	GotOutput=$(printf "$Input" | ./"$ScriptName".o | tail -n "$TailLines")
+	GotOutput=$(printf "$Input" | ./"$ScriptName".obj | tail -n "$TailLines")
 	if [ "$GotOutput" != "$ExpectedOutput" ]
 	then
 		echo "Test $ScriptName failed: Expected: $ExpectedOutput; got: $GotOutput"
