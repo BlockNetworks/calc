@@ -20,7 +20,8 @@ double pol(double dx, double dy, double *x, double *y){
 	return *x;
 }
 
-void swapVariables(double *var1, double *var2, double *tmp){
+template <typename T>
+void swapVariables(T *var1, T *var2, T *tmp){
 	// transpiration pull?
 	*tmp = *var1;
 	*var1 = *var2;

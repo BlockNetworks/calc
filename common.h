@@ -7,4 +7,6 @@ void query(std::string query, double *result);
 
 double pol(double dx, double dy, double *x, double *y);
 
-void swapVariables(double *var1, double *var2, double *tmp);
+template <typename T>
+void swapVariables(T *var1, T *var2, T *tmp);
+

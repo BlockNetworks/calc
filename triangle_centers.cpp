@@ -32,8 +32,8 @@ int main(){
 			cerr << "Not a triangle - all angles with same X-coordinate!" << endl;
 			return 2;
 		}
-		swapVariables(&c, &x, &m);
-		swapVariables(&d, &y, &m);
+		swapVariables<double>(&c, &x, &m);
+		swapVariables<double>(&d, &y, &m);
 	}
 
 	// 27-44
