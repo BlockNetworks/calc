@@ -1,12 +1,10 @@
+#include "calc.h"
 #include "RegStat.cpp"
 #include "common.cpp"
 #include "PointerGettable.cpp"
 #include "StatAverageGettable.cpp"
 
 using namespace std;
-
-double a, b, c, d, x, y, m, ans; // 7 variable slots + 1 Ans slot
-
 
 Gettable<double> *px = new PointerGettable<double>(&a);
 Gettable<double> *py = new PointerGettable<double>(&b);
@@ -18,7 +16,7 @@ Gettable<double> *ry = new PointerGettable<double>(&y);
 int main(){
 	// 3-26
 	// order of input for X,Y and C,D is swapped
-	cout << "In triangle P(a,b) Q(c, d) R(x, y):" << endl;
+	cout << "In triangle P(a,b) Q(c, d) R(x, y):\n";
 	query("a: ", &a);
 	query("b: ", &b);
 	query("c: ", &c);
