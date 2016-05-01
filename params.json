@@ -1,0 +1,6 @@
+{
+  "name": "calc",
+  "tagline": "Collection of calculator programs translated to C++",
+  "body": "Calculator programs encoded in C++\r\n===\r\n![](https://travis-ci.org/chankyin/calc.svg?branch=master)\r\n\r\nCollection of calculator programs translated to C++ (can be easily directly translated back to the calculator)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
