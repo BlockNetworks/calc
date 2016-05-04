@@ -3,7 +3,7 @@ sudo: false
 
 install:
 - "chmod +x tests.sh"
-- "FAILURES = 0"
+- "FAILURES=0"
 - source tests.sh
 
 script:
