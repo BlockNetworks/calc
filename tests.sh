@@ -11,7 +11,7 @@ function do_test {
 	GotOutput=$(printf "$Input" | ./"$ScriptName".obj | tail -n "$TailLines")
 	if [ "$GotOutput" != "$ExpectedOutput" ]
 	then
-		printf " Failed\n    Expected: $ExpectedOutput\n    Got: $GotOutput\n"
+		printf " Failed\nComparison: $(diff <(echo "$GotOutput") <(echo "$ExpectedOutput"))\n"
 
 		((FAILURES++))
 	else
