@@ -21,9 +21,21 @@ public:
 
 	void dt(double x, double y, double frequency);
 
+	void dt(double x, double y);
+
+	void dt(double x);
+
 	double bar_x();
 
 	double bar_y();
+
+	double sum_x();
+
+	double sum_y();
+
+	double sum_xy();
+
+	double sum_x3();
 
 	vector<RegStatEntry *> getStack();
 } stat;
